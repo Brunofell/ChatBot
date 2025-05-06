@@ -1,9 +1,17 @@
+import './Header.css';
+import { Link } from 'react-router-dom';
 
-
-export default function Header(){
-    return(
+export default function Header() {
+    return (
         <div>
-            <h1>HEADER</h1>
+            <header className="header">
+                <div className="tittle">
+                   <Link to="/">MusicBot</Link> 
+                </div>
+                <div className="chat">
+                    <Link to="/chat">Get Started</Link> 
+                </div>
+            </header>
         </div>
-    )
+    );
 }

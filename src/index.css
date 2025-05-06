@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Monoton&display=swap');
+
+:root {
+    --sky-blue: #3CBCE3;
+    --rich-black: #022335;
+    --prussian: #013D5A;
+    --liorice: #140D10;
+    --midnight: #023045;
+
+    --font-inter: 'Inter', sans-serif;
+    --font-raleway: 'Raleway', sans-serif;
+    --font-limelight: 'Limelight', cursive;
+    --font-monoton: 'Monoton', cursive;
+  }
