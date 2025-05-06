@@ -1,0 +1,104 @@
+/* Remove margens e bordas padrão do body */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Garante que o chat-container ocupe toda a tela */
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--rich-black);
+    color: white;
+    margin: 0; /* Remove margem */
+    padding: 0; /* Remove padding */
+  }
+  
+  
+  /* Caixa do chat */
+  .chat-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+    overflow: hidden; /* Impede que o conteúdo vaze */
+    font-family: var(--font-inter);
+  }
+  
+  /* Área de mensagens */
+  .messages {
+    flex: 1;
+    overflow-y: auto; /* Habilita o scroll se necessário */
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Estilo das mensagens */
+  .message {
+    max-width: 70%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    line-height: 1.4;
+  }
+  
+  /* Mensagens do usuário */
+  .message.user {
+    align-self: flex-end;
+    background-color: var(--sky-blue);
+    color: black;
+  }
+  
+  /* Mensagens do bot */
+  .message.bot {
+    align-self: flex-start;
+    background-color: var(--prussian);
+  }
+  
+  /* Área de input */
+  .input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #444;
+    background-color: var(--midnight);
+    position: sticky;
+    bottom: 0; /* Fixa a área de input na parte inferior */
+    z-index: 2; /* Garante que o input fique acima das mensagens */
+  }
+  
+  /* Estilo do input */
+  .input-area input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: var(--font-inter);
+  }
+  
+  /* Foco no input */
+  .input-area input:focus {
+    outline: none;
+  }
+  
+  /* Estilo do botão */
+  .input-area button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: var(--sky-blue);
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font-inter);
+  }
+  
+  /* Hover no botão */
+  .input-area button:hover {
+    background-color: #34a3c9;
+  }
+  
