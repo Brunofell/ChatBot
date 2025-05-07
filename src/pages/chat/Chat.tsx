@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 export default function Chat(){
     const [input, setInput] = useState('');
-    const [messages, setMessages] = useState([{role: 'bot', content: 'Olá! Pergunte algo sobre música 🎵'},]);
+    const [messages, setMessages] = useState([{role: 'bot', content: 'Hello there! 🎶 Ask me anything about music '},]);
 
     const handleSend = async () => {
         if (input.trim() === '') return;
@@ -51,7 +51,7 @@ export default function Chat(){
       
         } catch (error) {
           console.error(error);
-          setMessages(prev => [...prev, { role: 'bot', content: 'Erro ao buscar resposta 😢' }]);
+          setMessages(prev => [...prev, { role: 'bot', content: "Oops! Couldn't fetch the response 😢"}]);
         }
       };
       
@@ -79,12 +79,12 @@ export default function Chat(){
           <div className="input-area">
             <input
               type="text"
-              placeholder="Digite sua pergunta sobre música..."
+              placeholder="Type your question about music... 🎵"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
               />
-              <button onClick={handleSend}>Enviar</button>
+              <button onClick={handleSend}>Send</button>
           </div>
         </div>
       </div>
