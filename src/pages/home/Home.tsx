@@ -6,7 +6,7 @@ export default function Home() {
     <div className="home-bg">
       <Header />
       <div className="home-content">
-        <h1>Welcome to MusicBot</h1>
+        <h1>Welcome to <span>MusicBot</span></h1>
         <h2>The only chatbot for the music world</h2>
       </div>
     </div>

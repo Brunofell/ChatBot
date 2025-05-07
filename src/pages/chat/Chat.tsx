@@ -61,9 +61,6 @@ export default function Chat(){
           handleSend();
         }
       };
-      
-      
-
 
     return (
         <div className="chat-container">
@@ -80,18 +77,16 @@ export default function Chat(){
             ))}
           </div>
           <div className="input-area">
-          <input
-            type="text"
-            placeholder="Digite sua pergunta sobre música..."
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={handleKeyDown}
-            />
-            <button onClick={handleSend}>Enviar</button>
+            <input
+              type="text"
+              placeholder="Digite sua pergunta sobre música..."
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={handleKeyDown}
+              />
+              <button onClick={handleSend}>Enviar</button>
           </div>
         </div>
       </div>
     )
-
-
 }
