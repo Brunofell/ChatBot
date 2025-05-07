@@ -117,3 +117,155 @@ body {
 .input-area button:hover {
   background-color: #34a3c9;
 }
+
+/* Media Queries para Chat */
+@media screen and (max-width: 1200px) {
+  .chat-box {
+    padding: 0.9rem;
+  }
+  
+  .message {
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .chat-box {
+    padding: 0.8rem;
+  }
+  
+  .messages {
+    padding: 8px;
+    gap: 8px;
+  }
+  
+  .message {
+    padding: 10px 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chat-box {
+    padding: 0.7rem;
+  }
+  
+  .messages {
+    padding: 6px;
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+  
+  .message {
+    max-width: 80%;
+    padding: 8px 12px;
+  }
+  
+  .input-area {
+    padding: 8px;
+  }
+  
+  .input-area input {
+    padding: 8px;
+  }
+  
+  .input-area button {
+    padding: 8px 16px;
+    margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .chat-box {
+    padding: 0.6rem;
+  }
+  
+  .messages {
+    padding: 5px;
+    gap: 7px;
+  }
+  
+  .message {
+    max-width: 85%;
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  
+  .input-area {
+    padding: 7px;
+  }
+  
+  .input-area input {
+    padding: 7px;
+    font-size: 15px;
+  }
+  
+  .input-area button {
+    padding: 7px 14px;
+    margin-left: 7px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .chat-box {
+    padding: 0.5rem;
+  }
+  
+  .messages {
+    padding: 4px;
+    gap: 6px;
+  }
+  
+  .message {
+    max-width: 90%;
+    padding: 7px 10px;
+    font-size: 13px;
+  }
+  
+  .input-area {
+    padding: 6px;
+  }
+  
+  .input-area input {
+    padding: 6px;
+    font-size: 14px;
+  }
+  
+  .input-area button {
+    padding: 6px 12px;
+    margin-left: 6px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .chat-box {
+    padding: 0.4rem;
+  }
+  
+  .messages {
+    padding: 3px;
+    gap: 5px;
+  }
+  
+  .message {
+    max-width: 95%;
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+  
+  .input-area {
+    padding: 5px;
+  }
+  
+  .input-area input {
+    padding: 5px;
+    font-size: 13px;
+  }
+  
+  .input-area button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    font-size: 13px;
+  }
+}

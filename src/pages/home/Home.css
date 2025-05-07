@@ -47,3 +47,79 @@ span{
 span:hover{
   color: var(--prussian);
 }
+
+/* Media Queries para Home */
+@media screen and (max-width: 1200px) {
+  .home-content h1 {
+    font-size: 45px;
+  }
+  
+  .home-content h2 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home-content h1 {
+    font-size: 40px;
+  }
+  
+  .home-content h2 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-content {
+    height: calc(70vh - 100px);
+  }
+  
+  .home-content h1 {
+    font-size: 35px;
+  }
+  
+  .home-content h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home-content h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .home-content h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-content {
+    height: calc(70vh - 80px);
+  }
+  
+  .home-content h1 {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+  
+  .home-content h2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .home-content {
+    height: calc(70vh - 60px);
+  }
+  
+  .home-content h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .home-content h2 {
+    font-size: 16px;
+  }
+}
