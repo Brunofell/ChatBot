@@ -37,16 +37,13 @@
   text-align: center;
   color: var(--sky-blue);
   font-family: var(--font-raleway);
-  opacity: 0.75;
 }
 
 span{
   font-family: var(--font-limelight);
 }
 
-span:hover{
-  color: var(--prussian);
-}
+
 
 /* Media Queries para Home */
 @media screen and (max-width: 1200px) {
