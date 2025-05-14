@@ -7,6 +7,8 @@
 
 A specialized chatbot platform focused exclusively on the world of music, built with Spring Boot and React.
 
+> 🔗 **Backend Repository**: [MusicBot-Backend](https://github.com/Brunofell/ChatBot_API)
+
 <div align="center">
   <p><strong>Home Page</strong></p>
   <img src="./image/home.png" width="650" alt="MusicBot Home Page">
